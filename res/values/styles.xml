@@ -1,0 +1,77 @@
+<resources>
+    <style name="Fill">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="Wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="FillWidth" parent="Wrap">
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+    <style name="FillHeight" parent="Wrap">
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="BodyBalanceTheme" parent="Theme.Sherlock.Light.DarkActionBar">
+        <item name="android:buttonStyle">@style/BBButton</item>
+    </style>
+    <style name="FullWidthDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+    <style name="BBButton">
+        <item name="android:background">@drawable/btn_default_holo_dark</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">@color/primary_text_holo_dark</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:minWidth">64dip</item>
+    </style>
+    <style name="RepMaxNumberTextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:background">@drawable/rep_max_number_bg</item>
+        <item name="android:textColor">@color/primary_text_holo_light</item>
+        <item name="android:textSize">@dimen/default_text_size_huge</item>
+        <item name="android:onClick">onNumberClick</item>
+    </style>
+    <style name="EqualLlContainer">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/rep_max_number_bg</item>
+    </style>
+    <style name="InfoHeaderTextView" parent="Wrap">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="InfoImageView" parent="Wrap">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+    <style name="RepMaxView" parent="EqualLlContainer">
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/rep_max_number_bg</item>
+    </style>
+    <style name="RepMaxHeaderTextView" parent="Wrap">
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:textColor">@color/primary_text_holo_light</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+    </style>
+    <style name="RepMaxWeightTextView" parent="Wrap">
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:textColor">@color/primary_text_holo_light</item>
+        <item name="android:textSize">@dimen/default_text_size_header</item>
+    </style>
+</resources>

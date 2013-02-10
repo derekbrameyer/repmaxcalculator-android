@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00ffffff</color>
+    <color name="transparent_bl">#00000000</color>
+    <color name="transparent_90">#1a000000</color>
+    <color name="transparent_80">#33000000</color>
+    <color name="transparent_70">#4d000000</color>
+    <color name="transparent_60">#66000000</color>
+    <color name="transparent_50">#80000000</color>
+    <color name="transparent_40">#99000000</color>
+    <color name="transparent_30">#b3000000</color>
+    <color name="transparent_20">#cc000000</color>
+    <color name="transparent_10">#e5000000</color>
+    <color name="transparent_40_white">#99ffffff</color>
+    <color name="transparent_20_white">#ccffffff</color>
+    <color name="transparent_10_white">#e5ffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
+
+    <color name="dark_action_bar">#ff222222</color>
+
+    <color name="uva_blue">#ff333366</color>
+    <color name="uva_orange">#ffff7003</color>
+
+    <color name="bright_foreground_holo_dark">#fff3f3f3</color>
+    <color name="bright_foreground_holo_light">#ff000000</color>
+    <color name="bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+</resources>

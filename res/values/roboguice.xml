@@ -1,0 +1,5 @@
+<resources>
+    <string-array name="roboguice_modules">
+        <item>com.doomonafireball.repmaxcalculator.RoboGuiceModule</item>
+    </string-array>
+</resources>

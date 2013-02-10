@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/menu_paste"
+            android:icon="@drawable/ic_menu_paste_holo_dark"
+            android:title="@string/paste"
+            android:showAsAction="ifRoom"/>
+</menu>

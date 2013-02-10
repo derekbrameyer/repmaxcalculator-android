@@ -1,0 +1,15 @@
+*.dex
+*.class
+*.iml
+.idea/
+.DS_STORE
+.classpath
+.settings/
+bin/
+gen/
+local.properties
+target/
+classes/
+gen-external-apklibs/
+out/
+tmp/
