@@ -12,6 +12,7 @@ public class Datastore {
     private static final String IS_IMPERIAL = "IsImperial";
     private static final String SHOWN_EULA = "ShownEula";
     private static final String RM_FORMULA = "RmFormula";
+    private static final String SHOW_DECIMAL = "ShowDecimal";
 
     @Inject EncryptedSharedPreferences encryptedSharedPreferences;
 
@@ -22,9 +23,11 @@ public class Datastore {
     private SharedPreferences getPrefs() {
         return encryptedSharedPreferences;
     }
+
     public int getVersion() {
         return getPrefs().getInt(DEVICE_VERSION, 0);
     }
+
     public void persistVersion(int version) {
         getEditor().putInt(DEVICE_VERSION, version).commit();
     }
@@ -35,6 +38,14 @@ public class Datastore {
 
     public void persistIsImperial(boolean isImperial) {
         getEditor().putBoolean(IS_IMPERIAL, isImperial).commit();
+    }
+
+    public boolean getPersistedShowDecimal() {
+        return getPrefs().getBoolean(SHOW_DECIMAL, false);
+    }
+
+    public void persistShowDecimal(boolean showDecimal) {
+        getEditor().putBoolean(SHOW_DECIMAL, showDecimal).commit();
     }
 
     public boolean getPersistedShownEula() {

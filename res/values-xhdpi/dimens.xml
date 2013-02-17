@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="default_text_size_huge">48sp</dimen>
+    <dimen name="rep_max_number_min_width_land">100dp</dimen>
+</resources>

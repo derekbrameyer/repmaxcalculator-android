@@ -21,6 +21,7 @@ import roboguice.inject.InjectView;
 public class SettingsActivity extends RoboSherlockFragmentActivity {
 
     @InjectView(R.id.units) TextView units;
+    @InjectView(R.id.show_decimal) TextView showDecimal;
     @InjectView(R.id.about) TextView about;
     @InjectView(R.id.eula) TextView eula;
     @InjectView(R.id.version) TextView version;
@@ -40,6 +41,7 @@ public class SettingsActivity extends RoboSherlockFragmentActivity {
         getSupportActionBar().setTitle(R.string.settings);
 
         setUnitsText();
+        setShowDecimalText();
 
         try {
             appVersionName = getApplication().getPackageManager()
@@ -58,6 +60,13 @@ public class SettingsActivity extends RoboSherlockFragmentActivity {
                 setUnitsText();
             }
         });
+        showDecimal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mDatastore.persistShowDecimal(!mDatastore.getPersistedShowDecimal());
+                setShowDecimalText();
+            }
+        });
         about.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,6 +79,14 @@ public class SettingsActivity extends RoboSherlockFragmentActivity {
                 startActivity(new Intent(SettingsActivity.this, EulaActivity.class));
             }
         });
+    }
+
+    private void setShowDecimalText() {
+        if (mDatastore.getPersistedShowDecimal()) {
+            showDecimal.setText(R.string.show_decimal);
+        } else {
+            showDecimal.setText(R.string.dont_show_decimal);
+        }
     }
 
     private void setUnitsText() {

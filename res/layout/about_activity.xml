@@ -23,7 +23,8 @@
             android:background="@color/abs__holo_blue_light"/>
     <ScrollView
             style="@style/FillWidth"
-            android:fillViewport="true">
+            android:fillViewport="true"
+            android:scrollbars="none">
         <LinearLayout
                 style="@style/FillWidth"
                 android:orientation="vertical">

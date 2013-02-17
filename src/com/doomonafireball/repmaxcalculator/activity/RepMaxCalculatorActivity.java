@@ -131,8 +131,6 @@ public class RepMaxCalculatorActivity extends RoboSherlockFragmentActivity imple
         }
 
         setRepMaxTypefaces();
-        mRepMaxes.get(mCurrentReps - 1).setWeight(mCurrentWeight);
-        calculateRms();
 
         if (!mDatastore.getPersistedShownEula()) {
             startActivity(new Intent(this, EulaActivity.class));
@@ -142,14 +140,18 @@ public class RepMaxCalculatorActivity extends RoboSherlockFragmentActivity imple
     @Override
     public void onResume() {
         super.onResume();
+        boolean showDecimal = mDatastore.getPersistedShowDecimal();
         if (mDatastore.getPersistedIsImperial()) {
             mUnitsShort = getString(R.string.lbs);
         } else {
             mUnitsShort = getString(R.string.kg);
         }
         for (int i = 0; i < mRepMaxes.size(); i++) {
+            mRepMaxes.get(i).setShowDecimal(showDecimal);
             mRepMaxes.get(i).setFooter(mUnitsShort);
         }
+        mRepMaxes.get(mCurrentReps - 1).setWeight(mCurrentWeight);
+        calculateRms();
     }
 
     @Override

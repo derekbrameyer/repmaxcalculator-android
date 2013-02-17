@@ -4,13 +4,6 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:oak="http://oak/oak/schema"
         xmlns:repmaxcalculator="http://schemas.android.com/apk/res/com.doomonafireball.repmaxcalculator">
-    <FrameLayout
-            style="@style/FillWidth"
-            android:id="@+id/numbers_container"
-            android:layout_alignParentBottom="true">
-        <include
-                layout="@layout/numbers_container"/>
-    </FrameLayout>
     <oak.widget.TextViewWithFont
             style="@style/FillWidth"
             android:id="@+id/copy_text"
@@ -23,12 +16,21 @@
             android:textColor="@color/uva_orange"
             android:textSize="@dimen/default_text_size"
             oak:font="Roboto.ttf"/>
-    <ScrollView
-            style="@style/FillWidth"
+    <FrameLayout
+            style="@style/FillHeight"
+            android:id="@+id/numbers_container"
             android:layout_below="@id/copy_text"
-            android:layout_above="@id/numbers_container"
+            android:layout_alignParentRight="true">
+        <include
+                layout="@layout/numbers_container"/>
+    </FrameLayout>
+    <ScrollView
+            style="@style/FillHeight"
+            android:layout_below="@id/copy_text"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/numbers_container"
             android:fillViewport="true"
-            android:gravity="center_vertical"
+            android:gravity="center_vertical|center_horizontal"
             android:scrollbars="none">
         <LinearLayout
                 style="@style/Fill"
@@ -36,7 +38,7 @@
                 android:gravity="center_vertical|center_horizontal">
             <LinearLayout
                     style="@style/FillWidth"
-                    android:gravity="center_vertical">
+                    android:gravity="center_vertical|center_horizontal">
                 <com.doomonafireball.repmaxcalculator.widget.RepMaxView
                         style="@style/EqualLlContainer"
                         android:id="@+id/lbs_input"
@@ -50,7 +52,7 @@
             </LinearLayout>
             <LinearLayout
                     style="@style/FillWidth"
-                    android:gravity="center_vertical">
+                    android:gravity="center_vertical|center_horizontal">
                 <com.doomonafireball.repmaxcalculator.widget.RepMaxView
                         style="@style/EqualLlContainer"
                         android:id="@+id/kg_converted"

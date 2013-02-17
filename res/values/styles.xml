@@ -40,6 +40,22 @@
         <item name="android:textSize">@dimen/default_text_size_huge</item>
         <item name="android:onClick">onNumberClick</item>
     </style>
+    <style name="RepMaxNumberTextViewLandscape">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">@dimen/rep_max_number_min_width_land</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:background">@drawable/rep_max_number_bg</item>
+        <item name="android:textColor">@color/primary_text_holo_light</item>
+        <item name="android:textSize">@dimen/default_text_size_huge</item>
+        <item name="android:onClick">onNumberClick</item>
+    </style>
+    <style name="EqualLlVertical">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
     <style name="EqualLlContainer">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>

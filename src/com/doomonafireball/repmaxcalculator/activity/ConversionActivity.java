@@ -82,6 +82,16 @@ public class ConversionActivity extends RoboSherlockFragmentActivity {
 
         kgConverted.setTypeface(robotoBoldTf);
         lbsConverted.setTypeface(robotoBoldTf);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        boolean showDecimal = mDatastore.getPersistedShowDecimal();
+        kgConverted.setShowDecimal(showDecimal);
+        lbsConverted.setShowDecimal(showDecimal);
+        kgInput.setShowDecimal(showDecimal);
+        lbsInput.setShowDecimal(showDecimal);
         kgInput.setWeight(mCurrentWeight);
         lbsInput.setWeight(mCurrentWeight);
         calculateConversions();

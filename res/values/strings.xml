@@ -4,9 +4,8 @@
     <string name="about_rep_max_calculator">About Rep Max Calculator</string>
     <string name="about_text">\nRep Max Calculator helps you calculate a *RM from your existing stats. Select a number
         of reps that you know your weight for, and it will calculate the others based on a specific formula. You can
-        choose from any of the popular formulas, or use an average of them all.\n\nWarning to&#160;<a
-                href="com.doomonafireball.bodybalance://dyel">curl bros</a>: the calculated
-        numbers can be humbling.\n\nI hope you find it easy to use and am always open to feedback!
+        choose from any of the popular formulas, or use an average of them all.\n\nI hope you find it easy to use and am
+        always open to feedback!
     </string>
     <string name="about_dev">\nDeveloped by\nDoom on a Fireball Studios\ndoomonafireball@gmail.com</string>
     <string name="dyel">DYEL</string>
@@ -67,6 +66,8 @@
         <b>Metric (kg)</b>
     </string>
     <string name="settings">Settings</string>
+    <string name="show_decimal">Show decimal value</string>
+    <string name="dont_show_decimal">Don\'t show decimal value</string>
 
     <string name="brzycki">Brzycki</string>
     <string name="epley">Epley</string>

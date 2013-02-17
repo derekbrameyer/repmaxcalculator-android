@@ -10,8 +10,6 @@ import android.view.LayoutInflater;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import java.text.DecimalFormat;
-
 /**
  * User: derek Date: 11/21/12 Time: 11:39 AM
  */
@@ -20,7 +18,7 @@ public class RepMaxView extends LinearLayout {
     private TextView mHeader;
     private TextView mWeight;
     private TextView mFooter;
-    private DecimalFormat df = new DecimalFormat("#.#");
+    private boolean mShowDecimal = false;
 
     public RepMaxView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -35,7 +33,12 @@ public class RepMaxView extends LinearLayout {
         if (headerText != null) {
             mHeader.setText(headerText);
         }
+        mShowDecimal = array.getBoolean(R.styleable.RepMaxView_showDecimal, false);
         mWeight.setText("--");
+    }
+
+    public void setShowDecimal(boolean showDecimal) {
+        mShowDecimal = showDecimal;
     }
 
     public void setTypeface(Typeface tf) {
@@ -55,8 +58,14 @@ public class RepMaxView extends LinearLayout {
         if (weight.equals("")) {
             mWeight.setText("--");
         } else {
-            float weightFloat = Float.parseFloat(weight) / 10.0f;
-            mWeight.setText(String.format("%.1f", weightFloat));
+            if (mShowDecimal) {
+                float weightFloat = Float.parseFloat(weight) / 10.0f;
+                mWeight.setText(String.format("%.1f", weightFloat));
+            } else {
+                float weightFloat = Float.parseFloat(weight);
+                int weightInt = Math.round(weightFloat);
+                mWeight.setText(Integer.toString(weightInt));
+            }
         }
     }
 
