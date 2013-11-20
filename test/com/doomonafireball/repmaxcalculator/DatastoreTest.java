@@ -2,14 +2,12 @@ package com.doomonafireball.repmaxcalculator;
 
 import com.google.inject.Injector;
 
-import com.xtremelabs.robolectric.Robolectric;
-import com.xtremelabs.robolectric.RobolectricTestRunner;
-
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.junit.Assert;
-
+import org.robolectric.Robolectric;
+import org.robolectric.RobolectricTestRunner;
 
 import roboguice.RoboGuice;
 
@@ -18,14 +16,17 @@ import roboguice.RoboGuice;
  */
 @RunWith(RobolectricTestRunner.class)
 public class DatastoreTest {
+
     Datastore datastore;
+
     @Before
-    public void setup(){
+    public void setup() {
         Injector i = RoboGuice.getBaseApplicationInjector(Robolectric.application);
         datastore = i.getInstance(Datastore.class);
     }
+
     @Test
-    public void versionShouldPersist(){
+    public void versionShouldPersist() {
         int testVersion = 12345;
         datastore.persistVersion(testVersion);
 
