@@ -1,0 +1,31 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/rep_max_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.doomonafireball.repmaxcalculator.widget.PadViewPager
+        android:id="@+id/pad_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/pad_numbers"/>
+
+        </LinearLayout>
+
+        <include layout="@layout/pad_options"/>
+
+    </com.doomonafireball.repmaxcalculator.widget.PadViewPager>
+
+</LinearLayout>
