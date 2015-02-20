@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <CheckBox
+        style="@style/CheckBoxStyle"
+        android:id="@+id/use_all_formulas"
+        android:text="@string/use_all_formulas"
+        android:buttonTint="@color/deep_orange_500"/>
+
+    <CheckBox
+        style="@style/CheckBoxStyle"
+        android:id="@+id/brzycki"
+        android:text="@string/brzycki"/>
+
+    <CheckBox
+        style="@style/CheckBoxStyle"
+        android:id="@+id/epley"
+        android:text="@string/epley"/>
+
+    <CheckBox
+        style="@style/CheckBoxStyle"
+        android:id="@+id/lander"
+        android:text="@string/lander"/>
+
+    <CheckBox
+        style="@style/CheckBoxStyle"
+        android:id="@+id/lombardi"
+        android:text="@string/lombardi"/>
+
+    <CheckBox
+        style="@style/CheckBoxStyle"
+        android:id="@+id/mayhew"
+        android:text="@string/mayhew"/>
+
+    <CheckBox
+        style="@style/CheckBoxStyle"
+        android:id="@+id/oconner"
+        android:text="@string/oconner"/>
+
+    <CheckBox
+        style="@style/CheckBoxStyle"
+        android:id="@+id/wathen"
+        android:text="@string/wathen"/>
+</LinearLayout>

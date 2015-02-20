@@ -1,15 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/pad_options"
     style="@style/PadLayoutStyle.Options"
-    android:background="@color/deep_orange_500">
+    android:background="@color/deep_orange_500"
+    android:fillViewport="true"
+    android:scrollbars="none">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/pad_options"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="options"
-        android:textSize="48sp"
-        android:layout_centerInParent="true"/>
-</RelativeLayout>
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <FrameLayout
+            android:id="@+id/show_units_switch_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <FrameLayout
+            android:id="@+id/use_metric_switch_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <FrameLayout
+            android:id="@+id/calculator_style_numbers_switch_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/select_rep_max_formulas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_rep_max_formulas"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/lb_kg_converter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lb_kg_converter"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</ScrollView>

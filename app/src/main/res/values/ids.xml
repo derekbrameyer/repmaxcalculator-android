@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="show_units_switch" type="id"/>
+    <item name="use_metric_switch" type="id"/>
+    <item name="calculator_pad_switch" type="id"/>
+</resources>
