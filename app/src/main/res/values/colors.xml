@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="deep_orange_500">#ffff5722</color>
+
+    <color name="blue_500">#ff2196f3</color>\
+    <color name="blue_700">#ff1976d2</color>
+
+    <color name="divider_color">#1f000000</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+
+    <color name="selector_color">#8a000000</color>
+
+    <color name="monospaced_text_background">#1f000000</color>
+
+    <!-- Background color for the numeric pad. -->
+    <color name="pad_numeric_background_color">#434343</color>
+
+    <!-- Ripple color when a button is pressed in a pad. -->
+    <color name="pad_button_ripple_color">#33FFFFFF</color>
+
+    <!-- Ripple color when a button is pressed in a pad. -->
+    <color name="pad_button_advanced_ripple_color">#1A000000</color>
+
+</resources>

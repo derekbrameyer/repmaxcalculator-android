@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="rep_max_view_header_text_size">14sp</dimen>
+    <dimen name="rep_max_view_weight_text_size">24sp</dimen>
+    <dimen name="rep_max_view_footer_text_size">11sp</dimen>
+
+    <dimen name="lb_kg_label_size">20sp</dimen>
+
+    <dimen name="rep_max_view_vertical_padding">12dp</dimen>
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Rep Max Calculator</string>
+    <string name="about">About</string>
+
+    <string name="pounds_short">lbs.</string>
+    <string name="kg">kg</string>
+    <string name="lbs_is">lbs. is</string>
+    <string name="kg_is">kg is</string>
+
+    <string name="rm_1">1RM</string>
+    <string name="rm_2">2RM</string>
+    <string name="rm_3">3RM</string>
+    <string name="rm_4">4RM</string>
+    <string name="rm_5">5RM</string>
+    <string name="rm_6">6RM</string>
+    <string name="rm_7">7RM</string>
+    <string name="rm_8">8RM</string>
+    <string name="rm_9">9RM</string>
+    <string name="rm_10">10RM</string>
+    <string name="rm_11">11RM</string>
+    <string name="rm_12">12RM</string>
+
+    <string name="select_rep_max_formulas">Select rep max formulas</string>
+    <string name="calculator_style_numbers">Calculator-style numbers</string>
+    <string name="use_metric_units">Use metric units (kg)</string>
+    <string name="show_units">Show units</string>
+    <string name="done">Done</string>
+    <string name="paste_number">Paste Number</string>
+    <string name="pasted_text_error">Text could not be read as a number!</string>
+    <string name="copied_to_clipboard">Copied %1$s to clipboard.</string>
+
+    <string name="fire_intent">Fire Intent</string>
+    <string name="intent_results">Intent results</string>
+    <string name="action_bar_title_optional">ActionBar title (optional);</string>
+    <string name="action_bar_title_hint">e.g. Bench Press</string>
+    <string name="intent_creation_code">Intent creation code</string>
+    <string name="start_activity_for_result_code">startActivityForResult() code</string>
+    <string name="results">Results</string>
+    <string name="donate">Donate</string>
+    <string name="donate_1">Donate $1</string>
+    <string name="donate_2">Donate $2</string>
+    <string name="donate_5">Donate $5</string>
+    <string name="donate_10">Donate $10</string>
+    <string name="rate_on_google_play">Rate on Google Play</string>
+    <string name="thank_you_for_donating">Thank you for donating!</string>
+
+    <!-- Decimal separator (e.g. "1.23"). [CHAR_LIMIT=1] -->
+    <string name="dec_point">.</string>
+    <!-- Decimal representation of zero (e.g. "0", "10", "1.0", "1e0"). [CHAR_LIMIT=1] -->
+    <string name="digit_0">0</string>
+    <!-- Decimal representation of one (e.g. "1", "11", "1.1", "1e1"). [CHAR_LIMIT=1] -->
+    <string name="digit_1">1</string>
+    <!-- Decimal representation of two (e.g. "2", "22", "2.2", "2e2"). [CHAR_LIMIT=1] -->
+    <string name="digit_2">2</string>
+    <!-- Decimal representation of three (e.g. "3", "33", "3.3", "3e3"). [CHAR_LIMIT=1] -->
+    <string name="digit_3">3</string>
+    <!-- Decimal representation of four (e.g. "4", "44", "4.4", "4e4"). [CHAR_LIMIT=1] -->
+    <string name="digit_4">4</string>
+    <!-- Decimal representation of five (e.g. "5", "55", "5.5", "5e5"). [CHAR_LIMIT=1] -->
+    <string name="digit_5">5</string>
+    <!-- Decimal representation of six (e.g. "6", "66", "6.6", "6e6"). [CHAR_LIMIT=1] -->
+    <string name="digit_6">6</string>
+    <!-- Decimal representation of seven (e.g. "7", "77", "7.7", "7e7"). [CHAR_LIMIT=1] -->
+    <string name="digit_7">7</string>
+    <!-- Decimal representation of eight (e.g. "8", "88", "8.8", "8e8"). [CHAR_LIMIT=1] -->
+    <string name="digit_8">8</string>
+    <!-- Decimal representation of eight (e.g. "9", "99", "9.9", "9e9"). [CHAR_LIMIT=1] -->
+    <string name="digit_9">9</string>
+    <!-- Delete operation to remove last entered token. [CHAR_LIMIT=3] -->
+    <string name="del">del</string>
+    <!-- Content description for "del" button. [CHAR_LIMIT=NONE] -->
+    <string name="desc_del">delete</string>
+
+    <string name="use_all_formulas">Use all formulas</string>
+    <string name="brzycki">Brzycki</string>
+    <string name="epley">Epley</string>
+    <string name="lander">Lander</string>
+    <string name="lombardi">Lombardi</string>
+    <string name="mayhew">Mayhew et al.</string>
+    <string name="oconner">O\'Conner et al.</string>
+    <string name="wathen">Wathen</string>
+
+    <string name="set">Set</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="about_text">Rep Max Calculator helps you calculate a rep max from existing lift numbers. Select a number
+        of reps that you know your weight for, and it will calculate the others based on a specific formula. You can
+        choose from any of the popular formulas, or use an average of them all.\n\nI hope you find it easy to use and am
+        always open to feedback!\n\nDeveloped by\nDoom on a Fireball Studios\ndoomonafireball@gmail.com</string>
+    <string name="eula">End User License Agreement</string>
+    <string name="eula_text">This software is provided as-is, with no warranty of any kind.\n\nYour usage of this
+        app is done at your own risk, and in no event shall the developer be liable for personal injury or any
+        incidental, special, indirect, or consequential damages whatsoever.
+    </string>
+    <string name="open_intents">Open Intents</string>
+    <string name="open_intents_text">For the developers out there, Rep Max Calculator offers simple Intent bindings to integrate it with your app.  Simply call startActivityForResult() with some extras, and your users can quickly and easily calculate rep maxes and return them to your app.</string>
+    <string name="developer_playground">Developer Playground</string>
+    <string name="lb_kg_converter">Lb./Kg Converter</string>
+</resources>

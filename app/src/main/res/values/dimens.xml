@@ -1,0 +1,18 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="pad_page_margin">-24dip</dimen>
+
+    <dimen name="rep_max_view_header_text_size">14sp</dimen>
+    <dimen name="rep_max_view_weight_text_size">24sp</dimen>
+    <dimen name="rep_max_view_footer_text_size">11sp</dimen>
+
+    <dimen name="rep_max_view_max_width">80dp</dimen>
+
+    <dimen name="lb_kg_label_size">20sp</dimen>
+    <dimen name="lb_kg_text_size">34sp</dimen>
+
+    <dimen name="rep_max_view_vertical_padding">12dp</dimen>
+</resources>

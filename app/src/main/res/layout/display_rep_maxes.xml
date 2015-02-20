@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/display_rep_maxes"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dip">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.doomonafireball.repmaxcalculator.widget.RepMaxView
+            android:id="@+id/rep_max_1"
+            style="@style/RepMaxViewStyle"
+            android:onClick="onRepMaxViewClick"
+            app:header="@string/rm_1"/>
+
+        <com.doomonafireball.repmaxcalculator.widget.RepMaxView
+            android:id="@+id/rep_max_2"
+            style="@style/RepMaxViewStyle"
+            android:onClick="onRepMaxViewClick"
+            app:header="@string/rm_2"/>
+
+        <com.doomonafireball.repmaxcalculator.widget.RepMaxView
+            android:id="@+id/rep_max_3"
+            style="@style/RepMaxViewStyle"
+            android:onClick="onRepMaxViewClick"
+            app:header="@string/rm_3"/>
+
+        <com.doomonafireball.repmaxcalculator.widget.RepMaxView
+            android:id="@+id/rep_max_4"
+            style="@style/RepMaxViewStyle"
+            android:onClick="onRepMaxViewClick"
+            app:header="@string/rm_4"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.doomonafireball.repmaxcalculator.widget.RepMaxView
+            android:id="@+id/rep_max_5"
+            style="@style/RepMaxViewStyle"
+            android:onClick="onRepMaxViewClick"
+            app:header="@string/rm_5"/>
+
+        <com.doomonafireball.repmaxcalculator.widget.RepMaxView
+            android:id="@+id/rep_max_6"
+            style="@style/RepMaxViewStyle"
+            android:onClick="onRepMaxViewClick"
+            app:header="@string/rm_6"/>
+
+        <com.doomonafireball.repmaxcalculator.widget.RepMaxView
+            android:id="@+id/rep_max_7"
+            style="@style/RepMaxViewStyle"
+            android:onClick="onRepMaxViewClick"
+            app:header="@string/rm_7"/>
+
+        <com.doomonafireball.repmaxcalculator.widget.RepMaxView
+            android:id="@+id/rep_max_8"
+            style="@style/RepMaxViewStyle"
+            android:onClick="onRepMaxViewClick"
+            app:header="@string/rm_8"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.doomonafireball.repmaxcalculator.widget.RepMaxView
+            android:id="@+id/rep_max_9"
+            style="@style/RepMaxViewStyle"
+            android:onClick="onRepMaxViewClick"
+            app:header="@string/rm_9"/>
+
+        <com.doomonafireball.repmaxcalculator.widget.RepMaxView
+            android:id="@+id/rep_max_10"
+            style="@style/RepMaxViewStyle"
+            android:onClick="onRepMaxViewClick"
+            app:header="@string/rm_10"/>
+
+        <com.doomonafireball.repmaxcalculator.widget.RepMaxView
+            android:id="@+id/rep_max_11"
+            style="@style/RepMaxViewStyle"
+            android:onClick="onRepMaxViewClick"
+            app:header="@string/rm_11"/>
+
+        <com.doomonafireball.repmaxcalculator.widget.RepMaxView
+            android:id="@+id/rep_max_12"
+            style="@style/RepMaxViewStyle"
+            android:onClick="onRepMaxViewClick"
+            app:header="@string/rm_12"/>
+
+    </LinearLayout>
+
+</LinearLayout>

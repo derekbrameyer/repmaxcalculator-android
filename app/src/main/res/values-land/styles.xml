@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="PadLayoutStyle.Options">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_weight">208</item>
+        <item name="android:elevation">4dip</item>
+    </style>
+
+    <style name="PadLayoutStyle.Numeric">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_weight">240</item>
+        <item name="android:paddingTop">12dip</item>
+        <item name="android:paddingBottom">20dip</item>
+        <item name="android:paddingStart">0dip</item>
+        <item name="android:paddingEnd">28dip</item>
+    </style>
+
+    <style name="RepMaxViewStyle">
+        <item name="android:layout_width">@dimen/rep_max_view_max_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">@dimen/rep_max_view_max_width</item>
+        <item name="android:maxWidth">@dimen/rep_max_view_max_width</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/rep_max_view_background</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+</resources>

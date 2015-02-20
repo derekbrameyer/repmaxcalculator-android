@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/display_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/occupy_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <com.doomonafireball.repmaxcalculator.widget.RepMaxView
+            style="@style/RepMaxViewStyle"
+            android:layout_width="match_parent"/>
+
+        <com.doomonafireball.repmaxcalculator.widget.RepMaxView
+            style="@style/RepMaxViewStyle"
+            android:layout_width="match_parent"/>
+
+        <com.doomonafireball.repmaxcalculator.widget.RepMaxView
+            style="@style/RepMaxViewStyle"
+            android:layout_width="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/arrows_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_alignTop="@id/occupy_view"
+        android:layout_alignBottom="@id/occupy_view">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/ic_arrow_forward"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/ic_arrow_forward"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/arrows_container"
+        android:layout_alignTop="@id/occupy_view"
+        android:layout_alignBottom="@id/occupy_view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal|center_vertical">
+
+            <TextView
+                android:id="@+id/lbs_reference"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="--"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/lb_kg_text_size"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/pounds_short"
+                android:textColor="@color/black"
+                android:textSize="@dimen/lb_kg_label_size"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal|center_vertical">
+
+            <TextView
+                android:id="@+id/kg_reference"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="--"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/lb_kg_text_size"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/kg"
+                android:textColor="@color/black"
+                android:textSize="@dimen/lb_kg_label_size"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/arrows_container"
+        android:layout_alignTop="@id/occupy_view"
+        android:layout_alignBottom="@id/occupy_view">
+
+        <LinearLayout
+            android:id="@+id/kg_conversion_container"
+            android:clickable="true"
+            android:background="@drawable/rep_max_view_background"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal|center_vertical">
+
+            <TextView
+                android:id="@+id/kg_conversion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="--"
+                android:textColor="@color/black"
+                android:textSize="@dimen/lb_kg_text_size"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/kg"
+                android:textColor="@color/black"
+                android:textSize="@dimen/lb_kg_label_size"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lbs_conversion_container"
+            android:clickable="true"
+            android:background="@drawable/rep_max_view_background"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal|center_vertical">
+
+            <TextView
+                android:id="@+id/lbs_conversion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="--"
+                android:textColor="@color/black"
+                android:textSize="@dimen/lb_kg_text_size"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/pounds_short"
+                android:textColor="@color/black"
+                android:textSize="@dimen/lb_kg_label_size"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
