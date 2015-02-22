@@ -22,35 +22,63 @@
         android:text="@string/use_all_formulas"
         android:buttonTint="@color/deep_orange_500"/>
 
+    <View
+        android:layout_width="1dp"
+        android:layout_height="8dp" />
+
     <CheckBox
         style="@style/CheckBoxStyle"
         android:id="@+id/brzycki"
         android:text="@string/brzycki"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="8dp" />
 
     <CheckBox
         style="@style/CheckBoxStyle"
         android:id="@+id/epley"
         android:text="@string/epley"/>
 
+    <View
+        android:layout_width="1dp"
+        android:layout_height="8dp" />
+
     <CheckBox
         style="@style/CheckBoxStyle"
         android:id="@+id/lander"
         android:text="@string/lander"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="8dp" />
 
     <CheckBox
         style="@style/CheckBoxStyle"
         android:id="@+id/lombardi"
         android:text="@string/lombardi"/>
 
+    <View
+        android:layout_width="1dp"
+        android:layout_height="8dp" />
+
     <CheckBox
         style="@style/CheckBoxStyle"
         android:id="@+id/mayhew"
         android:text="@string/mayhew"/>
 
+    <View
+        android:layout_width="1dp"
+        android:layout_height="8dp" />
+
     <CheckBox
         style="@style/CheckBoxStyle"
         android:id="@+id/oconner"
         android:text="@string/oconner"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="8dp" />
 
     <CheckBox
         style="@style/CheckBoxStyle"
