@@ -19,9 +19,9 @@ allprojects {
 }
 
 def Integer buildVersionCode() {
-    return 3;
+    return 4;
 }
 
 def String buildVersionName() {
-    return "2.0.0";
+    return "2.1.0";
 }

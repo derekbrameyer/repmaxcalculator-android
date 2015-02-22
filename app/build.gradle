@@ -9,7 +9,7 @@ android {
         release {
             storeFile file("src/main/repmaxcalculator.keystore")
             storePassword ""
-            keyAlias ""
+            keyAlias "repmaxcalculator"
             keyPassword ""
         }
     }
