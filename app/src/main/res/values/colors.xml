@@ -26,4 +26,7 @@
     <color name="pad_button_advanced_ripple_color">#1A000000</color>
 
     <color name="pad_button_background">#ffaaaaaa</color>
+
+    <color name="pad_options_button">#ffd5d6d6</color>
+    <color name="pad_options_button_pressed">#ff7bb7e5</color>
 </resources>

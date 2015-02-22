@@ -51,6 +51,7 @@
             android:layout_weight="1"/>
 
         <Button
+            style="@style/PadOptionsButton"
             android:id="@+id/select_rep_max_formulas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -62,6 +63,7 @@
             android:layout_weight="1"/>
 
         <Button
+            style="@style/PadOptionsButton"
             android:id="@+id/lb_kg_converter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

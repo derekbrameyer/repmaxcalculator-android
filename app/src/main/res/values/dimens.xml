@@ -15,4 +15,11 @@
     <dimen name="lb_kg_text_size">34sp</dimen>
 
     <dimen name="rep_max_view_vertical_padding">12dp</dimen>
+
+    <dimen name="button_inset_vertical_material">6dp</dimen>
+    <dimen name="button_inset_horizontal_material">4dp</dimen>
+    <dimen name="control_corner_material">2dp</dimen>
+    <dimen name="button_padding_vertical_material">4dp</dimen>
+    <dimen name="button_padding_horizontal_material">8dp</dimen>
+
 </resources>
