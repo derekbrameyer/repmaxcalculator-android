@@ -17,6 +17,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.SwitchCompat;
 import android.text.TextUtils;
 import android.view.ContextThemeWrapper;
+import android.view.HapticFeedbackConstants;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -320,6 +321,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         }
         if (view instanceof RepMaxView) {
             Utils.copyStringToClipboard(this, ((RepMaxView) view).getWeight());
+            view.performHapticFeedback(HapticFeedbackConstants.LONG_PRESS);
         }
         return false;
     }
@@ -439,6 +441,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
     private void onClear() {
         if (TextUtils.isEmpty(mBuffer)) {
+            for (RepMaxView repMaxView : mRepMaxViews) {
+                repMaxView.clearWeight();
+            }
             return;
         }
 

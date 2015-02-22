@@ -50,7 +50,7 @@
     <string name="faq_question_1">How can I clear all values?</string>
     <string name="faq_answer_1">Long press the DEL key.</string>
     <string name="faq_question_2">\nHow does selecting multiple formulas work?</string>
-    <string name="faq_answer_2">The app will individually calculate each selected formula and then average all selected formulas together.</string>
+    <string name="faq_answer_2">The app will individually calculate each selected formula and then average them.</string>
     <string name="faq_question_3">\nHow do i copy/paste?</string>
     <string name="faq_answer_3">You can copy a value from a cell by long-pressing it.  You can paste into a selected cell by pressing the paste button in the Action Bar.  This also applies to the lb./kg converter page for the calculated cells.</string>
 
