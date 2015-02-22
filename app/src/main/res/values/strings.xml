@@ -23,7 +23,7 @@
     <string name="rm_12">12RM</string>
 
     <string name="select_rep_max_formulas">Select rep max formulas</string>
-    <string name="calculator_style_numbers">Calculator-style numbers</string>
+    <string name="calculator_style_numbers">Calculator-style numpad</string>
     <string name="use_metric_units">Use metric units (kg)</string>
     <string name="show_units">Show units</string>
     <string name="done">Done</string>
@@ -45,6 +45,14 @@
     <string name="donate_10">Donate $10</string>
     <string name="rate_on_google_play">Rate on Google Play</string>
     <string name="thank_you_for_donating">Thank you for donating!</string>
+
+    <string name="faq_c">FAQ</string>
+    <string name="faq_question_1">How can I clear all values?</string>
+    <string name="faq_answer_1">Long press the DEL key.</string>
+    <string name="faq_question_2">\nHow does selecting multiple formulas work?</string>
+    <string name="faq_answer_2">The app will individually calculate each selected formula and then average all selected formulas together.</string>
+    <string name="faq_question_3">\nHow do i copy/paste?</string>
+    <string name="faq_answer_3">You can copy a value from a cell by long-pressing it.  You can paste into a selected cell by pressing the paste button in the Action Bar.  This also applies to the lb./kg converter page for the calculated cells.</string>
 
     <!-- Decimal separator (e.g. "1.23"). [CHAR_LIMIT=1] -->
     <string name="dec_point">.</string>
