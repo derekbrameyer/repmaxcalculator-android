@@ -54,6 +54,8 @@
     <string name="faq_question_3">\nHow do i copy/paste?</string>
     <string name="faq_answer_3">You can copy a value from a cell by long-pressing it.  You can paste into a selected cell by pressing the paste button in the Action Bar.  This also applies to the lb./kg converter page for the calculated cells.</string>
 
+    <string name="calculation_explanation">The calculated RMs will be an average of all checked formulas below.</string>
+
     <!-- Decimal separator (e.g. "1.23"). [CHAR_LIMIT=1] -->
     <string name="dec_point">.</string>
     <!-- Decimal representation of zero (e.g. "0", "10", "1.0", "1e0"). [CHAR_LIMIT=1] -->

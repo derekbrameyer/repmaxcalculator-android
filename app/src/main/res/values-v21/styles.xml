@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="PadLayoutStyle.Numeric">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_weight">264</item>
+        <item name="android:paddingTop">12dip</item>
+        <item name="android:paddingBottom">20dip</item>
+        <item name="android:paddingStart">0dip</item>
+        <item name="android:paddingEnd">28dip</item>
+    </style>
+</resources>
